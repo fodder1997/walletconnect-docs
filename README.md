@@ -1,27 +1,30 @@
-# WalletConnect v2.0
+# WalletConnect Docs
 
-## Introduction
+This repo runs [docs.walletconnect.com](https://docs.walletconnect.com).
 
-WalletConnect is an open protocol to communicate securely between Dapps and Wallets. The protocol establishes a remote pairing between two apps and/or devices using a Relay server to relay payloads. These payloads are symmetrically encrypted through a shared key between the two peers. The pairing is initiated by one peer displaying a QR Code or deep link with a standard WalletConnect URI and is established when the counter-party approves this pairing request.
+Source can be viewed in [`docs`](./docs/) directory.
 
-## Getting Started
+## Running Locally
 
-Currently the WalletConnect protocol has references implementations written in Typescript for the Client and the Relay Server
+1. `yarn install`
+2. `yarn start`
+3. Open `http://localhost:3000/`
 
-To quickly setup for your Dapp or Wallet, go to [Quick Start](https://github.com/WalletConnect/walletconnect-docs/tree/4665484efb48d649211b3afa7e6a38eac4f3d104/quick-start/README.md) for code examples.
+## Adding a New Page
 
-To read in more detail about the WalletConnect protocol, go to [Technical Specification](tech-spec.md)
+1. Create a new file in `docs/`
+2. Configure `sidebars.js` to create the sidebar link.
 
-Additionally you can also consult the API references for [Client](client-api.md) and [Relay Server](relay-server.md).
+## Editing a Page
 
-## Useful Links
+1. Open the file in `docs/`
 
-TODO
+Older versions are available in `versioned_docs/`.
 
-## Community
+## Customize Settings & Theme
 
-Share your experience, contribute or ask questions with the WalletConnect Community
+1. Open `docusaurus.config.js`
 
-- Discord: [https://discord.walletconnect.org](https://discord.walletconnect.org)
-- Twitter: [https://twitter.com/walletconnect](https://twitter.com/walletconnect)
-- Github: [https://github.com/walletconnect](https://github.com/walletconnect)
+## More
+
+For more options, check the [Docusaurus docs](https://docusaurus.io/).
